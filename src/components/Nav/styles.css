@@ -1,0 +1,31 @@
+.dashboard--header nav {
+  box-sizing: border-box;
+  display: flex;
+  padding: 0.5em;
+  justify-content: space-between;
+  background-color: cadetblue;
+  margin: 0 auto;
+}
+
+.dashboard--header h2 {
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+.button--logout {
+  background-color: rgb(85, 143, 145);
+  border-radius: 2px;
+  border-style: none;
+  color: white;
+  cursor: pointer;
+  display: block;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  transition: all 0.5s;
+}
+
+.button--logout:hover {
+  background-color: rgb(59, 96, 97);
+  color: white;
+}

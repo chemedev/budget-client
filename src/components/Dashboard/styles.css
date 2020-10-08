@@ -1,0 +1,57 @@
+.dashboard {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.dashboard--balance {
+  padding: 1em;
+}
+
+.dashboard--balance h4 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.dashboard--balance h4 span {
+  font-size: 1.3em;
+  color: teal;
+}
+
+.dashboard--expenses {
+  overflow-y: auto;
+  padding: 1em 0;
+}
+
+.button--add {
+  cursor: pointer;
+  border-style: none;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: cadetblue;
+  transition: all 0.5s;
+}
+
+.button--add i {
+  font-size: 2em;
+  color: aliceblue;
+}
+
+.button--add:hover {
+  background-color: rgb(59, 96, 97);
+}
+
+@media (min-width: 720px) {
+}
+
+@media (min-width: 1280px) {
+  .dashboard--header {
+    margin: 0 auto;
+    width: 1200px;
+  }
+}

@@ -1,0 +1,129 @@
+/* Hidden field for update */
+.form--add #id {
+  display: none;
+}
+
+.form--container {
+  background-color: aliceblue;
+  bottom: 0;
+  height: calc(100vh - 44px);
+  position: absolute;
+  right: -100vw;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.form--container.show {
+  right: 0;
+}
+
+.form--add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form--input {
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+.form--add label,
+.form--add input,
+.form--add select {
+  cursor: pointer;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 30px;
+}
+
+.form--add label {
+  color: rgb(100, 100, 100);
+  width: 80px;
+  text-align: right;
+  padding-right: 10px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.form--add input,
+.form--add select {
+  border-style: none;
+  background-color: #fff;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  max-width: 70%;
+}
+
+.form--add label[for='isIncome'] {
+  width: auto;
+}
+
+.form--add input[type='checkbox'] {
+  width: 10%;
+  box-shadow: none;
+}
+
+.form--add .error {
+  position: absolute;
+  color: red;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em;
+  font-style: italic;
+  right: 28px;
+  bottom: -3px;
+}
+
+.form--actions {
+  padding: 1em 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.form--actions .button {
+  cursor: pointer;
+  height: 30px;
+  border-style: none;
+  background-color: cadetblue;
+  color: white;
+  border-radius: 4px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  width: 90px;
+  margin: 0 1em;
+}
+
+.form--actions .button--cancel {
+  background-color: transparent;
+  border: 1px solid cadetblue;
+  color: black;
+}
+
+.form--actions .button:hover {
+  background-color: rgb(28, 134, 138);
+}
+
+.form--actions .button--cancel:hover {
+  color: white;
+}
+
+@media (min-width: 720px) {
+  .form--add .error {
+    position: absolute;
+    color: red;
+    margin: 0;
+    padding: 0;
+    font-size: 0.8em;
+    font-style: italic;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}

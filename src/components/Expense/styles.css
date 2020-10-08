@@ -1,0 +1,91 @@
+.expense--container {
+  position: relative;
+  background-color: aliceblue;
+  border-radius: 5px;
+  padding: 0.75em;
+  width: 80%;
+  max-width: 320px;
+  margin: 1em auto;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+}
+
+.expense--container.income {
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+.expense--container.outcome {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.expense--container:hover {
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.expense--container:last-of-type {
+  margin-bottom: 0;
+}
+
+.expense--container:hover .expense--actions {
+  opacity: 1;
+}
+
+.expense--actions {
+  display: flex;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px;
+  transition: 0.25s;
+  width: 50px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.expense--actions .button--delete,
+.expense--actions .button--edit {
+  color: rgb(143, 143, 143);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.expense--actions .button--edit:hover {
+  color: rgb(67, 67, 212);
+}
+
+.expense--actions .button--delete:hover {
+  color: rgb(226, 50, 50);
+}
+
+.expense--container h4 {
+  text-align: left;
+  margin: 0 0 5px 0;
+}
+
+.expense--data {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.expense--type {
+  display: block;
+  text-align: left;
+  font-size: 2em;
+  margin: 0;
+}
+
+.expense--type.income {
+  color: green;
+}
+
+.expense--type.outcome {
+  color: red;
+}
+
+.expense--date {
+  text-align: right;
+  font-weight: 300;
+  font-style: italic;
+}

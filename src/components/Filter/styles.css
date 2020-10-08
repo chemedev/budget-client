@@ -1,0 +1,15 @@
+.filter--container {
+  padding: 1em 0;
+}
+
+.filter--select {
+  background-color: #fff;
+  border-radius: 3px;
+  border-style: none;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  height: 35px;
+  max-width: 320px;
+  padding-left: 10px;
+  width: 80%;
+}
